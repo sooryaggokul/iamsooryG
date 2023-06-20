@@ -1,0 +1,780 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+   
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+#header .container{
+    padding: 10px 5% ;
+}
+
+
+
+.offcanvas {
+    background-color:#ff004f ;
+    
+    width: 160px;
+}
+
+ .btn1{
+    width: 36px;
+    height: 30px;
+   border: none;
+    background-color:rgb(100, 98, 98);
+    color:#fff;
+
+}
+
+
+
+
+.btn1 span i{
+    size: 13px;
+    color: #fff;
+    padding: 0 0 38px;
+}
+
+#header .offcanvas .btn1 i{
+    padding: 30px 30px 30px;
+}
+/* .backgd{ */
+    /* width: 550px; */
+    /* height: 750px; */
+    /* margin: 0%; */
+    /* margin-bottom: 20px;
+    border-radius: 20px; */
+    /* margin-top: 20px; */
+    
+    
+/* } */
+
+body{
+    /* background-color: rgb(6, 5, 5); */
+    background: #080808;
+    color: #fff;
+
+}
+
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(images/myphotonw2edited.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-size: 1000px; */
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 150px;
+
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width:0;
+   height: 3px;
+   background: #ff003f;
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   transition: 0.5s;
+  
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+  
+}
+
+.headertext{
+    margin-top: 20%;
+ font-size: 25px;
+       }
+    
+.headertext h1{
+        font-size: 60px;
+        margin-top: 30px;
+        margin-bottom: 130px;
+      
+    }
+    
+.headertext h1 span{
+        color: #eb0c53;
+       
+    }
+
+
+    /* .row .col-6 .headertext p{
+        margin-right: 100px;
+    } */
+/* 
+    ----------------------------------------aboutme------------------------------------------ */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+}
+
+.col-8{
+    flex-basis: 60%;
+
+}
+
+.col-4 img{
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 100px;
+    /* height: 500px; */
+}
+
+.col-4{
+    flex-basis: 35%;
+}
+
+
+.aboutme{
+   margin-top: 13%;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 30px;
+    /* margin-right: 40px; */
+}
+.tab-links{
+    
+    font-size: 18px;
+    font-weight: 450;
+    font-weight: 500;
+    margin-right: 80px;
+    /* position: relative; */
+
+}
+
+/* .tab-contents{
+    margin-left: 35px;
+} */
+
+
+
+  .about ul li .both .up .down{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+} 
+ /* .skills{
+    margin-left: 40px;
+} */
+
+.tab-contents .both,.up,.down{
+    display: inline-block;
+     list-style: none; 
+     offset-distance: 5px;
+ }
+
+.tab-titles .both,.up,.down{
+    border-radius: 25px;
+    }
+
+ .tab-titles .both,.up,.down{
+  
+    /* font-size: 18px; */
+    /* position: relative; */
+    position: relative;
+    } 
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #ff004f;
+    
+    font-size: 16px;
+}
+
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+/* .skills ol li{
+    list-style: none;
+    margin-top: 25px;
+
+}   */
+
+/* .img{
+    width: 400px;
+} */
+
+/* .abt{
+    width: 450px;
+    margin-top: 30px;
+   
+} */
+
+ /* #aboutme .card-body {
+    background-color:black;
+ } */
+     /* border-radius: 5%;
+     margin: 2px; 
+     border: 5px solid #eb0c53;  */
+    
+
+/* .border{
+    border-radius: 5px;
+} */
+
+
+
+/* 
+----------demo */
+
+
+/* #aboutme .border {
+   
+    width: 280px ;
+    border-radius: 25px;
+    
+} */
+
+
+/* ----------------------------------------skills------------------------------------------  */
+
+ /* #inp1:hover,#inp2:hover,#inp3:hover,#inp4:hover,#inp5:hover,#inp6:hover,#inp7:hover{
+    color: #eb0c53;
+} */
+/* .skills-list:hover{
+    color: #eb0c53;
+} */
+
+.inp1:hover{
+    background-color: #eb0c53;
+}
+
+#skills{
+    padding: 30px 0;
+}
+
+
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+
+.skills-list div{
+    background-color: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    
+}
+
+.skills-list div i{
+    font-size: 50px;
+    margin-bottom: 5px;
+
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 150px;
+
+    
+}
+
+/* nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+} */
+
+
+.nav .nav-item .nav-link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+
+.nav .nav-item .nav-link::after{
+    content: '';
+    width:0;
+   height: 3px;
+   background: #ff003f;
+   position: absolute;
+   left: 16px;
+   /* right: 1px; */
+   bottom: 6px;
+   transition: 0.5s;
+  
+}
+
+.nav .nav-item .nav-link:hover::after{
+    width: 16%;
+  
+}
+
+/* ----------------------------------------contact------------------------------------------  */
+
+
+.contact-1{
+    flex-basis:40%;
+    /* border: 2px white solid; */
+    /* background-color: #878484; */
+     
+}
+
+.contact-1 p{
+    margin-top:30px;
+    
+}
+
+.contact-1 p i{
+    font-size: 30px;
+    margin-top: 10px;
+
+}
+
+.contact-1 p,i{
+    padding-bottom: 10px;
+    margin-left: 40x;
+    padding-left: 40px;
+    
+}
+
+.contact-1 .em i{
+    margin-bottom: 20px;
+    /* color: #eb0c53; */
+    color: #ff004f;
+}
+
+.contact-1 .link i{
+    color: #ff004f;
+}
+
+.contact-1 .em p i span{
+    font-size: 30px;
+}
+
+.contact-1 .em p span{
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+.contact-1 .link span{
+    font-size: 20px;
+}
+
+/* .contact-1 p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+} */
+
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
+
+.btn.btn2{
+    display: inline-block;
+    background-color: #ff004f;
+    padding: 10px 30px ;
+    margin-left: 40px;
+    
+}
+
+
+.contact-2{
+    flex-basis:55%;
+}
+
+.contact-2 form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    /* text-decoration-color: #fff; */
+    font-size: 18px;
+    border-radius: 10px;
+
+}
+
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* .contact-1 .btn.btn2 a{
+    margin-right: 15px;
+} */
+
+
+
+/* ----------------------------------------ending------------------------------------------  */
+
+.ending{
+    width: 100%;
+    margin: 0%;
+}
+
+.ending img{
+    width: 100%;
+   
+    height: 200px;
+}
+
+.ending p{
+    margin-bottom: 29px;
+}
+
+
+.ending.card{
+    margin-top:50px ;
+}
+
+.card{
+    margin-top: 50px;
+}
+.ending .card p{
+    margin-left: 500px;
+}
+
+.ending .card .card-text i{
+    padding: 0%;
+    color: #ff003f;
+}
+.ending .card .card-img-overlay p{
+    margin-top: 45px;
+}
+
+
+
+/* ----------------------------------------for small screen------------------------------------------  */
+
+/* nav .offcanvas{
+    display: none;
+} */
+
+#demo,.btn1{
+    display: none;
+}
+
+.nav{
+    display: none;
+}
+
+
+
+@media only screen and (max-width:600px){
+
+    html{
+        scroll-behavior: smooth;
+        
+    }
+
+    .nav{
+        display: block;
+    }
+
+    #header{
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(images/myphotonw2edited.jpg);
+
+    }
+    #header .container{
+        padding: 30px 15%;
+    }
+    
+    .headertext{
+        margin-top: 100%;
+     font-size: 20px;
+           }
+        
+    .headertext h1{
+            font-size: 48px;
+            margin-top: 30px;
+            margin-bottom: 100px;
+          
+        }
+        
+    .headertext h1 span{
+            color: #eb0c53;
+           
+        }
+
+
+
+    /* .headertext{
+        margin-top: 20%;
+     font-size: 20px;
+     position: relative;
+           }
+        
+    .headertext h1{
+            font-size: 40px;
+            margin-top: 300px;
+            margin-bottom: 50px;
+          
+        }
+        
+    .headertext h1 span{
+            color: #eb0c53;
+           
+        }
+     .headertext p{
+        margin-top: 200px;
+     } */
+     .offcanvas {
+        background-color:#ff004f ;
+        height: 70vh;
+        /* height: 100%; */
+        width: 160px;
+        
+    }
+    
+     .btn1{
+        width: 36px;
+        height: 30px;
+       border: none;
+        background-color:rgb(100, 98, 98);
+        color:#fff;
+    
+    }
+    
+    
+    
+    
+    .btn1 span i{
+        size: 13px;
+        color: #fff;
+        padding: 0 0 38px;
+    }
+    
+    #header .offcanvas .btn1 i{
+        padding: 30px 30px 30px;
+    }
+
+
+/* ------------------------ */
+
+  
+   #demo,.btn1{
+    display: block;
+   }
+
+   nav{
+    display: none;
+   }
+
+   .offcanvas nav{
+    display: block;
+   }
+
+   /* nav ul{
+    background-color: #ff004f;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 50px;
+   } */
+   
+     .aboutme h1{
+    font-size: 40px;
+   } 
+    
+   .col-8,.col-4{
+    flex-basis: 100%;
+    /* margin-bottom: 30px; */
+   }
+   .col-4{
+    margin-bottom: 30px;
+   }
+
+   .col-8{
+    font-size: 14px;
+   }
+
+   .tab-links{
+    font-size: 16px;
+    margin-right: 40px;
+   }
+
+    .tab-contents{
+    margin-left: 35px;
+   }
+   
+   .contact-1,.contact-2{
+    flex-basis: 100%;
+   }
+
+   form .btn2{
+    
+    padding: 12px 40px;
+    font-size: 13px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: 80px;
+}
+
+.contact-1 .btn{
+    font-size: 13px;
+    font-weight: 80px;
+}
+   /* .card-text{
+    align-self: flex-end;
+   } */
+   
+   /* .ending{
+    display: none;
+   } */
+ .card-img-overlay{
+   flex-basis: 100%; 
+ }
+ 
+ #skills{
+    padding: 15px 0;
+}
+
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    grid-gap:20px;
+    margin-top: 25px;
+}
+
+.skills-list div{
+    background-color: #262626;
+    padding: 20px;
+    font-size: 2px;
+    font-weight: 200;
+    border-radius: 8px;
+    
+}
+
+.skills-list div i{
+    font-size: 25px;
+    margin-bottom: 5px;
+
+}
+
+
+.contact-1 h1{
+    margin-top: 30px;
+}
+
+
+
+
+
+
+.ending{
+    width: 100%;
+    margin: 0%;
+}
+
+.ending img{
+    width: 100%;
+   height: 150px;
+}
+
+.ending p{
+    margin-bottom:10px;
+    
+}
+
+.ending.card{
+    margin-top:25px ;
+}
+
+.card{
+    margin-top: 25px;
+}
+.ending .card p{
+    margin-left: 25px;
+}
+
+.ending .card .card-text i{
+    padding: 0%;
+    color: #ff003f;
+}
+.ending .card .card-img-overlay p{
+    margin-top: 10px;
+}
+
+.ending .card .card-text{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 30px;
+}
+
+
+
+
+
+
+
+
+}
